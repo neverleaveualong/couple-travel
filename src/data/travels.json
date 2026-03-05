@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "country": "Japan",
+    "countryKr": "일본",
+    "city": "오사카",
+    "date": "2024-07-15",
+    "endDate": "2024-07-20",
+    "memo": "첫 해외여행! 도톤보리에서 타코야끼 먹방",
+    "photo": "/images/placeholder.jpg",
+    "coordinates": [138.2529, 36.2048]
+  },
+  {
+    "id": 2,
+    "country": "Thailand",
+    "countryKr": "태국",
+    "city": "방콕",
+    "date": "2025-01-10",
+    "endDate": "2025-01-15",
+    "memo": "왓포 사원이 정말 웅장했다",
+    "photo": "/images/placeholder.jpg",
+    "coordinates": [100.9925, 15.8700]
+  }
+]

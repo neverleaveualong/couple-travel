@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "date": "2024-03-14",
+    "title": "첫 데이트",
+    "place": "홍대 카페거리",
+    "category": "cafe",
+    "memo": "처음 만난 날, 떨리는 마음으로 카페에서 만났다",
+    "photo": "/images/placeholder.jpg",
+    "lat": 37.5563,
+    "lng": 126.9236
+  },
+  {
+    "id": 2,
+    "date": "2024-04-20",
+    "title": "벚꽃 나들이",
+    "place": "여의도 한강공원",
+    "category": "outdoor",
+    "memo": "벚꽃이 만개한 날, 한강에서 치킨 먹었다",
+    "photo": "/images/placeholder.jpg",
+    "lat": 37.5284,
+    "lng": 126.9326
+  },
+  {
+    "id": 3,
+    "date": "2024-06-15",
+    "title": "부산 여행",
+    "place": "해운대",
+    "category": "travel",
+    "memo": "첫 국내여행! 바다가 너무 예뻤다",
+    "photo": "/images/placeholder.jpg",
+    "lat": 35.1587,
+    "lng": 129.1604
+  },
+  {
+    "id": 4,
+    "date": "2024-08-10",
+    "title": "100일 기념",
+    "place": "이태원 레스토랑",
+    "category": "restaurant",
+    "memo": "100일 축하! 분위기 좋은 레스토랑에서 저녁",
+    "photo": "/images/placeholder.jpg",
+    "lat": 37.5340,
+    "lng": 126.9948
+  },
+  {
+    "id": 5,
+    "date": "2024-12-25",
+    "title": "크리스마스",
+    "place": "명동",
+    "category": "date",
+    "memo": "첫 크리스마스, 눈이 와서 더 좋았다",
+    "photo": "/images/placeholder.jpg",
+    "lat": 37.5636,
+    "lng": 126.9827
+  }
+]

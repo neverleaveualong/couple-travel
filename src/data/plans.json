@@ -1,0 +1,30 @@
+{
+  "upcoming": [
+    {
+      "id": 1,
+      "title": "제주도 여행",
+      "date": "2026-04-10",
+      "endDate": "2026-04-13",
+      "place": "제주도",
+      "memo": "봄에 제주도 가서 유채꽃 보기",
+      "type": "domestic"
+    },
+    {
+      "id": 2,
+      "title": "유럽 여행",
+      "date": "2026-07-01",
+      "endDate": "2026-07-14",
+      "place": "파리, 런던",
+      "memo": "여름 유럽 여행 계획 중",
+      "type": "international"
+    }
+  ],
+  "bucketList": [
+    { "id": 1, "title": "오로라 보기", "place": "아이슬란드", "done": false },
+    { "id": 2, "title": "스위스 알프스 하이킹", "place": "스위스", "done": false },
+    { "id": 3, "title": "하와이 스노클링", "place": "하와이", "done": false },
+    { "id": 4, "title": "교토 단풍 구경", "place": "일본", "done": false },
+    { "id": 5, "title": "뉴욕 타임스퀘어 연말", "place": "미국", "done": false },
+    { "id": 6, "title": "산토리니 석양", "place": "그리스", "done": false }
+  ]
+}
