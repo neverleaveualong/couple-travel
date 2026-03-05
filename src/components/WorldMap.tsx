@@ -32,12 +32,12 @@ export default function WorldMap({ markers }: WorldMapProps) {
               <Geography
                 key={geo.rpiKey || geo.id || geo.properties?.name}
                 geography={geo}
-                fill="#E8DDD0"
-                stroke="#D4C5B2"
-                strokeWidth={0.5}
+                fill="#EDE3D8"
+                stroke="#D9CCBE"
+                strokeWidth={0.4}
                 style={{
                   default: { outline: 'none' },
-                  hover: { fill: '#D4C5B2', outline: 'none' },
+                  hover: { fill: '#DDD3C6', outline: 'none', transition: 'fill 0.3s' },
                   pressed: { outline: 'none' },
                 }}
               />
@@ -48,22 +48,27 @@ export default function WorldMap({ markers }: WorldMapProps) {
         {markers.map((marker, i) => (
           <Marker key={marker.id} coordinates={marker.coordinates}>
             <motion.g
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: i * 0.2, type: 'spring' }}
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ delay: 0.3 + i * 0.2, type: 'spring', stiffness: 200 }}
             >
-              <circle r={6} fill="#C5727A" stroke="#FDF6EE" strokeWidth={2} />
-              <circle r={10} fill="#E8B4B8" opacity={0.3}>
-                <animate attributeName="r" values="8;14;8" dur="3s" repeatCount="indefinite" />
-                <animate attributeName="opacity" values="0.3;0;0.3" dur="3s" repeatCount="indefinite" />
+              {/* Pulse */}
+              <circle r={10} fill="#D4808A" opacity={0.15}>
+                <animate attributeName="r" values="6;14;6" dur="3s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values="0.2;0;0.2" dur="3s" repeatCount="indefinite" />
               </circle>
+              {/* Outer ring */}
+              <circle r={8} fill="none" stroke="#D4808A" strokeWidth={1} opacity={0.3} />
+              {/* Dot */}
+              <circle r={4.5} fill="#D4808A" stroke="#FFF9F5" strokeWidth={2} />
+              {/* Label */}
               <text
                 textAnchor="middle"
-                y={-16}
+                y={-18}
                 style={{
                   fontFamily: 'Noto Sans KR',
                   fontSize: '11px',
-                  fill: '#5C3D2E',
+                  fill: '#4A3228',
                   fontWeight: 500,
                 }}
               >
